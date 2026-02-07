@@ -10,7 +10,8 @@
 
 
 【ポートフォリオサイト（デモURL）】
-https://github.com/kanna933/Kissa1/settings
+[[https://github.com/kanna933/Kissa1/settings](https://kanna933.github.io/Kissa1/
+)](https://kanna933.github.io/Kissa1/)
 
 ---
 
