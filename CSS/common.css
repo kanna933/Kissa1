@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+
+/*--------------------------*/
+/*    sp 
+/*-------------------------*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 0.875rem;
+  background-color: #fff;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 60px;
+  z-index: 10;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.header-inner {
+  width: 100%;
+  padding: 7px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.site-menu ul {
+  text-align: center;
+  font-weight: bold;
+}
+.header-logo img{
+  width: 100px;
+}
+.header-site-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: #736E62;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.toggle-menu {
+  display: block;
+  width: 44px;
+  height: 34px;
+  background-image: url(../images/common/icon-menu.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+.header-site-menu.open {
+  
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.main {
+  padding-top: 50px;
+}
+
+.footer {
+  background-color: #333132;
+  width: 100%;
+}
+.footer-site-menu {
+  color: #fff;
+  padding-top: 40px;
+}
+.footer-logo img{
+  width: 230px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-top: 40px;
+  padding-left: 50px;
+  padding-bottom: 38px;
+}
+
+.footer-tel {
+  font-size: 1.5rem;
+}
+
+.footer .text {
+  text-align: center;
+  color: #fff;
+}
+.footer-time {
+  padding-bottom: 40px;
+}
+footer .text {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/*--------------------------*/
+/*    @media pc 1024px
+/*-------------------------*/
+
+@media (min-width: 1024px) {
+  .header {
+    height: 100px;
+  }
+  .header-inner {
+    padding: 14px 300px;
+    
+  }
+  .toggle-menu {
+    display: none;
+  }
+  .header-site-menu {
+    position: static;        
+    display: block;
+    opacity: 1;                
+    visibility: visible;       
+    transform: none;         
+    background-color: transparent;
+    padding: 0;
+    color: #333132;
+  }
+  .site-menu ul {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  .header-site-menu .site-menu li{
+    transition: opasity 0.5s;
+  }
+  .header-site-menu .site-menu li:hover {
+    opacity: 0.5;
+    
+  }
+  .header-logo img{
+  width: 150px;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.footer-site-menu ul{
+  justify-content: center;
+}
+.footer-logo {
+  display: inline-block;
+  padding-left: 740px;
+}
+.footer-site-menu ul li {
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
+ 
+}
