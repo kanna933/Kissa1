@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+
+/*--------------------------
+    sp 
+-------------------------*/
+
+.main {
+  padding-top: 50px;
+}
+.title {
+  height: 310px;
+  background-image: url(../images/concept/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+.title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+.title p {
+  font-size: 0.875rem;
+  margin-top: 7px;
+}
+.feature {
+  width: 85%;
+  max-width: 500px;
+  margin: 45px auto;
+}
+.feature-text h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000;
+  margin-top: 20px;
+}
+.feature-text p {
+  margin-top: 20px;
+}
+.feature img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.movie {
+  background-color: #f8f8f8;
+  padding: 20px 20px;
+  margin-bottom: 80px;
+
+}
+.movie h2 {
+  text-align: center;
+}
+.movie h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.movie iframe {
+  display: block;
+  width: 100%;
+  height: 250px;
+}
+.movie p {
+  margin-top: 20px;
+  
+}
+
+/*--------------------------
+    @media pc 1024px
+-------------------------*/
+
+@media (min-width: 1024px) {
+  .header {
+    height: 100px;
+  }
+  .header-inner {
+    padding: 14px 300px;
+    
+  }
+  .toggle-menu {
+    display: none;
+  }
+  .header-site-menu {
+    position: static;        
+    display: block;
+    opacity: 1;                
+    visibility: visible;       
+    transform: none;         
+    background-color: transparent;
+    padding: 0;
+    color: #333132;
+  }
+  .site-menu ul {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  .header-site-menu .site-menu li{
+    transition: opasity 0.5s;
+  }
+  .header-site-menu .site-menu li:hover {
+    opacity: 0.5;
+    
+  }
+  .header-logo img{
+  width: 150px;
+}
+
+.main {
+  padding-top: 100px;
+}
+.feature {
+  display: flex;
+  justify-content: space-between;
+  width: 930px;
+  max-width: 90%;
+  margin: 75px auto 0;
+  align-items: flex-start;
+}
+.feature img {
+  width: 360px;
+}
+.feature-text {
+  max-width: 500px;
+  margin-right: 40px;
+}
+.feature-text h2 {
+  font-size: 1.4rem;
+}
+.feature-text p {
+  font-size: 0.875rem;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.reverse .feature-text {
+  margin-left: 40px;
+  margin-right: 0; 
+}
+.movie {
+  width: 930px;
+  max-width: 90%;
+  padding: 50px 60px;
+  margin: 55px auto 0;
+}
+.movie iframe {
+  height: 456px;
+}
+.movie p {
+  font-size: 0.875rem;
+  margin-top: 20px;
+}
+.footer {
+  margin-top: 100px;
+}
+.footer-site-menu ul{
+  justify-content: center;
+}
+.footer-logo {
+  display: inline-block;
+  padding-left: 740px;
+}
+.footer-site-menu ul li {
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
+ 
+}
